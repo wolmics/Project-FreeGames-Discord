@@ -1,0 +1,8 @@
+.git/
+.idea/
+
+# Configs
+config.yaml
+sent_games.json
+color_cache.json
+logs.log

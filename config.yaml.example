@@ -1,0 +1,17 @@
+# Copy this file to config.yaml and fill in your real webhook URLs.
+# Configure the discord webhooks and optionally settings and you are ready to go.
+
+webhooks:
+  - name: main-server          # stable identifier used as the state key. Do not reuse this name for different webhooks
+    url: https://discord.com/api/webhooks/XXXXXXXXXXXX/XXXXXXXXXXXXXXXXXXXX
+
+  - name: friends-server
+    url: https://discord.com/api/webhooks/YYYYYYYYYYYY/YYYYYYYYYYYYYYYYYYYY
+
+# All optional - shown here with their defaults.
+settings:
+  api_url: https://api.wolmics.cc/games.json
+  request_timeout: 15            # seconds, for both the API fetch and Discord posts
+  missing_run_threshold: 2       # consecutive runs a game must be absent before
+                                 # it's considered expired and removed from tracking
+  style: large                   # either 'large' or 'compact'
